@@ -3,6 +3,6 @@ provider "postgresql" {
   port     = 5432
   database = "postgres"
   username = "root"
-  password = "root"
+  # password = ""
   sslmode  = "disable"
 }

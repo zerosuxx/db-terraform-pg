@@ -4,6 +4,9 @@
     "postgresql@latest",
     "github:zerosuxx/nixpkgs#adminer"
   ],
+  "env": {
+    "PGPASSWORD": "postgres"
+  },
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"
