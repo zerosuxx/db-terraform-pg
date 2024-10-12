@@ -5,7 +5,8 @@
     "github:zerosuxx/nixpkgs#adminer"
   ],
   "env": {
-    "PGPASSWORD": "root"
+    "TF_VAR_DB_USERNAME": "root",
+    "TF_VAR_DB_PASSWORD": "root"
   },
   "shell": {
     "init_hook": [
