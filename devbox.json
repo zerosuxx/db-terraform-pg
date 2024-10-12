@@ -5,7 +5,7 @@
     "github:zerosuxx/nixpkgs#adminer"
   ],
   "env": {
-    "PGPASSWORD": "postgres"
+    "PGPASSWORD": "root"
   },
   "shell": {
     "init_hook": [
