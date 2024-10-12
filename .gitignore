@@ -1,0 +1,4 @@
+.devbox/
+.idea/
+**.tfstate*
+.terraform/

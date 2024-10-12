@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.10.7/.schema/devbox.schema.json",
+  "packages": [
+    "postgresql@latest",
+    "github:zerosuxx/nixpkgs#adminer"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "initdb": "rm -rf .devbox/virtenv/postgresql/data && initdb",
+      "createrootuser": "createuser --superuser --pwprompt --echo root",
+      "createuser": "createuser --pwprompt --echo \"$@\""
+    }
+  }
+}

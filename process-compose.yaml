@@ -1,0 +1,11 @@
+version: "0.5"
+
+processes:
+  adminer:
+    command: adminer --listen ${HOST}:18080
+    availability:
+      restart: "always"
+    readiness_probe:
+      http_get:
+        host: ${HOST}
+        port: 18080
