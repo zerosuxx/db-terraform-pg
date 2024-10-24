@@ -15,7 +15,8 @@
     "scripts": {
       "initdb": "rm -rf .devbox/virtenv/postgresql/data && initdb",
       "createrootuser": "createuser --superuser --pwprompt --echo root",
-      "createuser": "createuser --pwprompt --echo \"$@\""
+      "createuser": "createuser --pwprompt --echo \"$@\"",
+      "createdb": "createdb $USER"
     }
   }
 }

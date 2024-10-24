@@ -23,3 +23,11 @@ variable "DB_PASSWORD" {
 variable "DB_SSL_MODE" {
   default = "disable"
 }
+
+variable "APP_DB" {
+  default = "app"
+}
+
+variable "APP_DB_SCHEMA" {
+  default = "app"
+}
